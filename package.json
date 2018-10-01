@@ -1,0 +1,46 @@
+{
+  "name": "angkor",
+  "version": "0.0.1",
+  "description": "Customizable application based on Node.js framework and Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register -r ignore-styles disc/**/*.spec.ts",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thodinh/angkorjs.git"
+  },
+  "keywords": [
+    "angkorjs"
+  ],
+  "author": "Tho Dinh",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/thodinh/angkorjs/issues"
+  },
+  "homepage": "https://github.com/thodinh/angkorjs#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "inversify": "^4.13.0",
+    "parse-server": "^3.0.0",
+    "reflect-metadata": "^0.1.12",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.6",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.11.3",
+    "@types/parse": "^1.11.2",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "gulp-tslint": "^8.1.3",
+    "gulp-typescript": "^4.0.0",
+    "ignore-styles": "^5.0.1",
+    "mocha": "^5.2.0",
+    "run-sequence": "^2.2.1",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
+  }
+}

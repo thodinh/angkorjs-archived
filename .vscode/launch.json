@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Tests",
+            "preLaunchTask": "typescript",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "-u",
+                "tdd",
+                "--timeout",
+                "999999",
+                "--colors",
+                "-r", "ts-node/register", "-r", "ignore-styles",
+                "${workspaceFolder}/dist/**/*.spec.js"
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug TypeScript in Node.js",
+        "preLaunchTask": "typescript",
+        "program": "${workspaceFolder}/src/index.ts",
+        "cwd": "${workspaceFolder}",
+        "protocol": "inspector",
+        "outFiles": [
+            "${workspaceFolder}/dist/**/*.js"
+        ]
+    }]
+}
